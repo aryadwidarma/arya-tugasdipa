@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .logo h1 {
+            font-size: 3em; /* Ubah ukuran font sesuai kebutuhan */
+            font-weight: bold;
+            text-align: center; /* Menempatkan teks di tengah */
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan transparansi */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; /* Membuat slide mengisi seluruh viewport */
+            background-size: cover; /* Membuat gambar latar belakang menutupi seluruh area slide */
+            background-position: center; /* Memusatkan gambar latar belakang */
+            background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5); /* Navbar transparan */
+            padding: 10px 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+            align-items: center; /* Menempatkan konten di tengah secara vertikal */
+        }
+        .logo {
+            color: white;
+        }
+        .trending-items .item {
+            cursor: pointer;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Membuat footer transparan */
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+        footer p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Anime Lovers</h1>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('sasuke.jpg');">
+                <div class="hero-text">
+                    <h2>Selamat Datang di Anime Lovers</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trending">
+        <div class="container">
+            
+            <div class="trending-items">
+                <div class="item" onclick="window.location.href='attack-on-titan.html'">
+                    <img src="titan.jpg" alt="Trending 2">
+                    <h3>Attack on Titan</h3>
+                </div>
+                <div class="item">
+                    <img src="voli.jpg" alt="Trending 1">
+                    <h3>Haikyuu Karasuno</h3>
+                </div>
+                <div class="item">
+                    <img src="slam.jpg" alt="Trending 3">
+                    <h3>Slam</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Anime Lovers. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Add your JavaScript code here if needed
+    </script>
+</body>
+</html>
